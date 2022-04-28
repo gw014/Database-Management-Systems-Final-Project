@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+h1 {
+
+    text-align: center;
+    color:rgb(0, 0, 0);
+    font-size: 500%;
+}
+
+h2 {
+    text-align: center;
+    color:rgb(0, 0, 0);
+    font-size: 400%;
+}
+
+li {
+    
+    font-size: 200%;
+    padding: 20px;
+    list-style-type:none;
+    text-align: center;
+    list-style-position: inside;
+}
+
+label {
+    color: blue;
+    padding: 10px;
+}
+
+form {
+    padding: 10px;
+    text-align:center;
+}

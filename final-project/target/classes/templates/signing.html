@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+
+<header xmlns:th="https://www.thymeleaf.org">
+    <link rel="stylesheet" href="styles.css?v=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</header>
+
+<body>
+    <h2>Sign Free Agent</h2>
+    <form action="#" th:action="@{/signing}" th:object="${signing}" method="post">
+        <p>Team Name: <input type="text" th:field="*{teamName}"></p>
+        <p>Player Name:<input type="text" th:field="*{playerName}"></p>
+        <p>Years:<input type="text" th:field="*{years}"></p>
+        <p>Contract Value:<input type="text" th:field="*{contractValue}"></p>
+        <p>Player Option:<input type="checkbox" th:field="*{playerOption}"></p>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

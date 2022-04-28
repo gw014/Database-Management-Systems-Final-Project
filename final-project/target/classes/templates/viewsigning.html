@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head> 
+    <title>Signing</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Player Signed</h1>
+    <p th:text="'Team Name: ' + ${signing.teamName}"></p>
+    <p th:text="'Player First Name: ' + ${signing.playerName}"></p>
+    <p th:text="'Years: ' + ${signing.years}"></p>
+    <p th:text="'Contract Value: ' + ${signing.contractValue}"></p>
+    <p th:text="'Player Option: ' + ${signing.playerOption}"></p>
+    <a href="/signing">Make another signing</a>
+</body>
+</html>

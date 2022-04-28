@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head> 
+    <title>Team Added</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Added Team</h1>
+    <p th:text="'Name: ' + ${team.name}">
+    <p th:text="'Location: ' + ${team.location}">
+    <p th:text="'Conference: ' + ${team.conference}">
+    <p th:text="'Cap Space: ' + ${team.capSpace}"></p>
+    <a href="/team">Add another team</a>
+</body>
+</html>

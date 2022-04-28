@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head> 
+    <title>Player Added</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Added Player</h1>
+    <p th:text="'Name: ' + ${player.name}">
+    <p th:text="'Position: ' + ${player.position}">
+    <p th:text="'Number: ' + ${player.number}">
+    <a href="/player">Add another player</a>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+
+<header xmlns:th="https://www.thymeleaf.org">
+    <link rel="stylesheet" href="styles.css?v=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</header>
+
+<body>
+    <h2>Add Free Agent</h2>
+    <form action="#" th:action="@{/player}" th:object="${player}" method="post">
+        <p>Name: <input type="text" th:field="*{name}"></p>
+        <p>Position:<input type="text" th:field="*{position}"></p>
+        <p>Number:<input type="text" th:field="*{number}"></p>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

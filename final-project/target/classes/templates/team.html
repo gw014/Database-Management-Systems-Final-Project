@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+
+<header xmlns:th="https://www.thymeleaf.org">
+    <link rel="stylesheet" href="styles.css?v=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</header>
+
+<body>
+    <h2>Add Team</h2>
+    <form action="#" th:action="@{/team}" th:object="${team}" method="post">
+        <p>Name: <input type="text" th:field="*{name}"></p>
+        <p>Location:<input type="text" th:field="*{location}"></p>
+        <p>Conference:<input type="text" th:field="*{conference}"></p>
+        <p>Cap Space:<input type="text" th:field="*{capSpace}"></p>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
